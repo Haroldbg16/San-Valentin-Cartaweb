@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="hearts-container"></div>
+
+
+    <main class="container">
+        <div id="book-container">
+            <!-- Vista 1: Propuesta principal -->
+            <div id="view-1" class="page active">
+                <div id="proposal-card" class="glass-card">
+                    <div class="emoji"><img src="img/cat six seven.gif" alt=""></div>
+                    <h1>¿Quiere ser mi San valentin?</h1>
+                    <div class="buttons">
+                        <button id="si-btn" class="btn btn-primary">¡Sí!</button>
+                        <button id="no-btn" class="btn btn-secondary">No</button>
+                    </div>
+                </div>
+
+                <div id="envelope-wrapper" class="hidden">
+                    <div class="envelope">
+                        <div class="flap"></div>
+                        <div class="front"></div>
+                        <div id="letter" class="letter">
+                            <div class="tab-content active" id="carta">
+                                <h2>Para mi persona especial [nombre]...</h2>
+                                <div class="letter-text">
+                                    <p>En el momento en que te conocí, supe que eras alguien especial. Tu sonrisa ilumina mis días y tu presencia llena mi corazón de alegría.</p>
+                                    <p>Este San Valentín quiero pedirte que seas mi compañía, que me permitas compartir contigo no solo este día, sino muchos momentos más.</p>
+                                    <p>Quiero hacerte reír, escucharte, apoyarte en todo y llenar nuestros días de momentos inolvidables.</p>
+                                    <p class="signature">Con todo mi cariño ❤️</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="close-letter" class="btn btn-secondary">Cerrar</button>
+                    
+                    <nav class="nav-arrows hidden mobile-nav">
+                        <button class="nav-btn prev-btn" aria-label="Anterior">←</button>
+                        <button class="nav-btn next-btn" aria-label="Siguiente">→</button>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Vista 2: Referencia de la nota y el relicario -->
+            <div id="view-2" class="page">
+                <div class="reference-view">
+                    <div class="note-container">
+                        <div class="plaid-background"></div>
+                        <div class="scrap-paper">
+                            <span class="date">16/03/24</span>
+                            <div class="paper-content">
+                                <p>una página totalmente dedicada para ti [agregar oracion romantica]</p>
+                                <p>Con mucho cariño.</p>
+                            </div>
+                            <img src="img/flowers.png" alt="" class="corner-flowers" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                    <div class="locket-container">
+                        <div class="heart-locket open">
+                            <div class="locket-half left">
+                                 <!-- [agregar inicial] -->
+                                <div class="locket-photo">.</div>
+                            </div>
+                            <div class="locket-half right">
+                                <!-- [agregar inicial] -->
+                                <div class="locket-photo">.</div>
+                            </div>
+                            <div class="pendant-chain"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="nav-arrows mobile-nav">
+                    <button class="nav-btn prev-btn" aria-label="Anterior">←</button>
+                </nav>
+            </div>
+
+            <!-- Vista 3: Scrapbook Premium (Lado Izquierdo) -->
+            <div id="view-3" class="page">
+                <div class="premium-scrapbook">
+                    <!-- Base del Notebook/Clipboard -->
+                    <div class="notebook-base">
+                        <div class="notebook-clip"></div>
+                        <div class="notebook-paper">
+                            <div class="notebook-header">
+                                <h2>[agregar texto]</h2>
+                            </div>
+                            
+                            <!-- Foto Principal 1 (Polaroid) -->
+                            <div class="scrap-element polaroid-1 pop-element">
+                                <div class="photo-box">
+                                    <img src="img/foto5.jpeg" alt="">
+                                </div>
+                                <p class="caption">[agregar texto]</p>
+                            </div>
+
+                            <!-- Foto Secundaria 2 (Polaroid) -->
+                            <div class="scrap-element polaroid-2 pop-element">
+                                <div class="photo-box">
+                                    <img src="img/foto7.png" alt="">
+                                </div>
+                                <p class="caption">[agregar texto]</p>
+                            </div>
+
+                            <!-- Nota Adhesiva (Sticky Note) para el Texto -->
+                            <div class="scrap-element sticky-note pop-element">
+                                <div class="sticky-pin"></div>
+                                <p>[agregar texto especial ]</p>
+                            </div>
+                        </div>
+
+                        <!-- Pegatinas y Decoraciones Flotantes -->
+                        <div class="sticker-deco heart-sticker float-element" style="top: 10%; right: 5%;">💌</div>
+                        <div class="sticker-deco star-sticker float-element" style="bottom: 15%; left: 5%;">❣️</div>
+                        <div class="sticker-deco spark-sticker float-element" style="top: 40%; left: -5%;">❤️</div>
+                        
+                        <!-- Imágenes decorativas vacías para personalización -->
+                        <img src="img/psyduck.png" class="deco-img sticker-img-1 float-element" alt="" onerror="this.style.display='none'">
+                        <img src="img/psyduck.png" class="deco-img sticker-img-2 float-element" alt="" onerror="this.style.display='none'">
+                        <img src="img/psyduck.png" class="deco-img sticker-img-3 float-element" alt="" onerror="this.style.display='none'">
+                        
+                    </div>
+                </div>
+                <nav class="nav-arrows mobile-nav">
+                    <button class="nav-btn next-btn" aria-label="Siguiente">→</button>
+                </nav>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="cursor-trail"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
